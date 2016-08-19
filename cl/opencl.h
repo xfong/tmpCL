@@ -7,21 +7,21 @@
 	#include <OpenCL/OpenCL.h>
 #else
 
-	#include "../../headers/ocl10/cl.h"
-	#include "../../headers/ocl10/cl_gl.h"
-	#include "../../headers/ocl10/cl_gl_ext.h"
-	#include "../../headers/ocl10/cl_ext.h"
+	#include "../../headers/ocl11/cl.h"
+	#include "../../headers/ocl11/cl_gl.h"
+	#include "../../headers/ocl11/cl_gl_ext.h"
+	#include "../../headers/ocl11/cl_ext.h"
 /*
 	#include <CL/opencl.h>
 */
 #ifdef __WIN32
-	#include "../../headers/ocl10/cl_d3d10.h"
+	#include "../../headers/ocl11/cl_d3d10.h"
 //	#include <CL/cl_d3d10.h>
 #endif
 #endif
 
-#ifndef CL_VERSION_1_0
-	#error "This package requires OpenCL 1.0"
+#ifndef CL_VERSION_1_1
+	#error "This package requires OpenCL 1.1"
 #endif
 
 #ifndef __gl_h_
